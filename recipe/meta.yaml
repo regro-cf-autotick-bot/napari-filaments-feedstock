@@ -1,5 +1,5 @@
 {% set name = "napari-filaments" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_filaments-{{ version }}.tar.gz
-  sha256: f7626b855ee3c151fa0ab47a1f70dd9e552167e19d55598a1f9eb24c9e6a06df
+  sha256: 3986cfd578a21c1617c4b2414deb1476dc4baadcee5c9b481623be38dd685e91
 
 build:
   noarch: python
