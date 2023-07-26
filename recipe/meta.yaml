@@ -19,11 +19,15 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - importlib_metadata
+    - macro-kit
     - magic-class >=0.6.7
     - magicgui
     - matplotlib-base
     - napari
     - numpy
+    - pandas
+    - psygnal
     - python >=3.8
     - qtpy
     - scipy
@@ -36,6 +40,7 @@ test:
     - pip check
   requires:
     - pip
+    - pyqt
 
 about:
   home: https://github.com/hanjinliu/napari-filaments
