@@ -19,18 +19,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
   run:
     - importlib_metadata
     - macro-kit
-    - magic-class >=0.6.7
+    - magic-class >=0.7.3
     - magicgui
     - matplotlib-base
     - napari
     - numpy
     - pandas
     - psygnal
-    - python >=3.8
+    - python >=3.9
     - qtpy
     - scipy
 
