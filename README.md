@@ -1,11 +1,11 @@
-About napari-filaments
-======================
+About napari-filaments-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-filaments-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hanjinliu/napari-filaments
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/napari-filaments-feedstock/blob/main/LICENSE.txt)
 
 Summary: A napari plugin for filament analysis
 
