@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari_filaments-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari_filaments-{{ version }}.tar.gz
   sha256: 3b8a6c2f21efa7a24f760ba561e42ac06772a75f6e773f2cd89e723f4ac919ad
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   script_env:
     - QT_QPA_PLATFORM=offscreen
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
   run:
     - importlib_metadata
     - macro-kit
@@ -30,7 +30,7 @@ requirements:
     - numpy
     - pandas
     - psygnal
-    - python >=3.9
+    - python >={{ python_min }}
     - qtpy
     - scipy
 
@@ -43,6 +43,7 @@ test:
   requires:
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://github.com/hanjinliu/napari-filaments
